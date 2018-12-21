@@ -9,10 +9,10 @@ function view (state, emit) {
 
   return html`
     <body class="container mx-auto py-8">
-      <div class="w-full max-w-xs">
-        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onsubmit=${handleSubmit}>
+      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form onsubmit=${handleSubmit}>
           <div class="mb-4">
-            <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
+            <label class="block text-grey-darker text-sm font-bold mb-2" for="suggestion">
               Suggestion
             </label>
             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="suggestion" type="text" placeholder="Enter your suggestion">
@@ -23,7 +23,7 @@ function view (state, emit) {
             </button>
           </div>
         </form>
-        <div>
+        <div class="py-2 font-bold">
           ${state.message}
         </div>
       </div>
