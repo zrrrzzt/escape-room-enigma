@@ -8,16 +8,25 @@ function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
 
   return html`
-    <body class="code lh-copy">
-      <main class="pa3 cf center">
-          <form onsubmit=${handleSubmit}>
-            <input id="suggestion" placeholder="Enter your suggestion" />
-            <button type="submit" class="shadow-3 pa3 mb3 mt3 bg-white w-50 pointer">Check</button>
-          </form>
-          <div>
-          ${state.message}
+    <body class="container mx-auto py-8">
+      <div class="w-full max-w-xs">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onsubmit=${handleSubmit}>
+          <div class="mb-4">
+            <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
+              Suggestion
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="suggestion" type="text" placeholder="Enter your suggestion">
           </div>
-      </main>
+          <div class="flex items-center justify-between">
+            <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+              Check
+            </button>
+          </div>
+        </form>
+        <div>
+          ${state.message}
+        </div>
+      </div>
     </body>
   `
 
