@@ -1,6 +1,12 @@
 {
   "noKeyFound": "Nice try... but very wrong",
   "solutions": [
-    { "key": "ulke", "message": "You tricked me" }
+    { "key": "juletrefot", "message": "186" },
+    { "key": "julegraut", "message": "253" },
+    { "key": "julestrømpe", "message": "131" },
+    { "key": "julenek", "message": "929" },
+    { "key": "julebukk", "message": "040" },
+    { "key": "ribbefett", "message": "673" },
+    { "key": "pinnekjøtt", "message": "676" }
   ]
 }
