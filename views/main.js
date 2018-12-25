@@ -10,6 +10,7 @@ function view (state, emit) {
   return html`
     <body class="container mx-auto py-8">
       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h1 class="text-center">Enigma</h1>
         <form onsubmit=${handleSubmit}>
           <div class="mb-4">
             <label class="block text-grey-darker text-sm font-bold mb-2" for="code">
