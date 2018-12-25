@@ -12,14 +12,14 @@ function view (state, emit) {
       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <form onsubmit=${handleSubmit}>
           <div class="mb-4">
-            <label class="block text-grey-darker text-sm font-bold mb-2" for="suggestion">
-              Suggestion
+            <label class="block text-grey-darker text-sm font-bold mb-2" for="code">
+              Enter code
             </label>
-            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="suggestion" type="text" placeholder="Enter your suggestion">
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline" id="code" type="text" placeholder="Enter code">
           </div>
           <div class="flex items-center justify-between">
-            <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-              Check
+            <button class="flex-1 bg-white hover:bg-grey-lightest text-grey-darkest font-semibold my-2 py-4 px-4 border border-grey-light rounded shadow" type="submit">
+              Decrypt
             </button>
           </div>
         </form>
@@ -32,9 +32,9 @@ function view (state, emit) {
 
   function handleSubmit (e) {
     e.preventDefault()
-    const suggestionField = document.getElementById('suggestion')
+    const suggestionField = document.getElementById('code')
     const suggestion = suggestionField.value
-    emit('suggestion:submit', suggestion)
+    emit('code:submit', suggestion)
     suggestionField.value = ''
   }
 }

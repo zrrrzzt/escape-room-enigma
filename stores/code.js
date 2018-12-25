@@ -6,7 +6,7 @@ function store (state, emitter) {
   state.message = ''
 
   emitter.on('DOMContentLoaded', function () {
-    emitter.on('suggestion:submit', function (suggestion) {
+    emitter.on('code:submit', function (suggestion) {
       const message = solutions.find(line => line.key === suggestion.toLowerCase())
       state.message = message ? message.message : noKeyFound
       emitter.emit(state.events.RENDER)
