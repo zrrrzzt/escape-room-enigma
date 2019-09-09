@@ -16,7 +16,7 @@
   "dependencies": {
     "choo": "7.0.0",
     "choo-service-worker": "3.0.0",
-    "sheetify": "7.4.0",
+    "sheetify": "8.0.0",
     "tailwindcss": "1.1.2"
   },
   "devDependencies": {
