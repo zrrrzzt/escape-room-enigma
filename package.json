@@ -17,7 +17,7 @@
     "choo": "7.1.0",
     "choo-service-worker": "3.0.0",
     "sheetify": "8.0.0",
-    "tailwindcss": "2.0.3"
+    "tailwindcss": "2.0.4"
   },
   "devDependencies": {
     "bankai": "9.15.3",
